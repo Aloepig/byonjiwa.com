@@ -28,11 +28,12 @@
     <div class="splash">
         <img  class="splash-head" src="img/main_zuzu_2016.jpg">
         <p class="splash-subhead">
-            쭈쭈와 함께. 2019년 시작.
+            쭈쭈와 함께. <span id="thisYear"></span>년 시작.
         </p>
         <p>
             <a href="https://home.byonjiwa.com/blog/index.php" class="pure-button pure-button-primary">GO BLOG</a>
         </p>
+        <p>예약 인스턴스 만료일: 2020년 5월 1일 09시</p>
     </div>
 </div>
 <script>
@@ -43,6 +44,8 @@
 
     ga('create', 'UA-78193805-1', 'auto');
     ga('send', 'pageview');
+    
+    document.getElementById("thisYear").append(new Date().getFullYear());
 </script>
 </body>
 </html>
